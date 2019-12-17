@@ -6,15 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script defer src="main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
    <div class="temp">
-       <label for="degreeInput">Degree: </label>
-       <input id = "Celsius" type="text"> 
-       <button type="button" id="degreeToFahrenheit"> Convert To</button>
-       <label for="fahrenheitInput">Fahrenheit: </label>
-       <input id="fahrenheit" type="text">
-       <p class="" id="demo"></p>
-   </div></div>
+       <div class="degree">
+        <label class ="lead" for="degreeInput">Degree: </label>
+        <input class="lead" id = "Celsius" type="text" autofocus required>
+       </div> 
+       <div class="convert">
+        <button class="btn btn-primary" type="button" id="degreeToFahrenheit"> Convert To</button>
+       </div>
+       <div class="fahrenheit">
+        <label class="lead" for="fahrenheitInput">Fahrenheit: </label>
+        <input class="lead" id="fahrenheit" type="text" autofocus required>
+       </div>
+      <div class="result">
+        <p class="lead" id="demo"></p>
+      </div>
+      
+   </div>
 </body>
 </html>
